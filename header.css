@@ -1,0 +1,142 @@
+/* Importação das Fonts Google Fonts) 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Inter:wght@600&family=Montserrat:wght@800&family=Teko:wght@600&display=swap');
+
+/* Estilos gerais (Todo o projeto) */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* Define o modelo de caixa para incluir padding e borda no tamanho total do elemento */
+}
+
+body {
+    background: #1F1517;
+    color: #FFFF;
+}
+
+html {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none; /* Remove a decoração de texto, como sublinhado, do elemento */
+}
+
+ul {
+    list-style-type: none; /* Remove os marcadores de lista (bolinhas) de um elemento de lista */
+}
+
+/* _____________________________________________________ */
+/* Header */
+
+nav {
+    max-width: 1120px; /* Define a largura máxima do elemento em 1120 pixels */
+    margin: auto; /* Centraliza o elemento horizontalmente na tela */
+
+    padding: 1.5rem 10rem; 
+    /* 1.5rem: Isso define o preenchimento vertical (topo e base) do elemento como 1.5 vezes o tamanho da fonte do elemento raiz. Se a fonte do elemento raiz for 16 pixels, isso resultaria em um preenchimento vertical de 24 pixels.
+
+    10rem: Isso define o preenchimento horizontal (esquerda e direita) do elemento como 10 vezes o tamanho da fonte do elemento raiz. Com uma fonte do elemento raiz de 16 pixels, isso resultaria em um preenchimento horizontal de 160 pixels. */
+
+    display: flex; /* Define o elemento como um container flexível */
+    flex-direction: row; /* Define a direção dos elementos filhos como uma linha */
+    justify-content: space-between; /* Distribui os elementos filhos uniformemente ao longo do eixo principal, com espaçamento entre eles */
+    
+}
+
+.title {
+    font-family: 'Teko', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase; /* Transforma o texto para letras maiúsculas */
+}
+
+/* Estilos para o menu hamburguer */
+.menu-toggle {
+    display: none; /* Não exibe em telas grandes */
+    cursor: pointer;
+}
+
+/* Imagem do Hamburguer (Responsividade) */
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+  }
+
+.menu {
+    display: flex; /* Define o elemento como um container flexível */
+    flex-direction: row; /* Estabelece a direção dos elementos filhos para uma disposição em linha */
+    gap: 24px; /* Define o espaçamento entre os elementos filhos como 24 pixels */
+    color: #FFF2E780; /* Define a cor do texto para um tom específico de amarelo */
+    margin-top: 9px; /* Adiciona um espaçamento de margem superior de 9 pixels ao elemento */
+    margin-left: 25px;
+    margin-right: 25px;
+    
+}
+
+.menu a:hover {
+    color: #fff; /* Nova cor do texto quando o cursor passa por cima */
+}
+
+.menu a:visited {
+    color: #FFF2E780; /* Define a cor dos links visitados como #FFF2E780 */
+}
+
+.github {
+    color:#FFF2E7;
+    font-weight: 600;
+    margin-top: 8px; /* Adiciona um espaçamento de margem superior de 8 pixels ao elemento */
+}
+
+.github:hover {
+    color: #a45a49; /* Nova cor do texto quando o cursor passa por cima */
+}
+
+
+
+/* _____________________________________________________ */
+/* Responsividade (Telas menores que 768px) */
+
+@media screen and (max-width: 768px) {
+
+    /* Header */
+    nav ul {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background: #333;
+      width: 100%;
+      overflow: hidden;
+      transition: max-height 0.5s;
+      z-index: 9;
+    }
+    nav ul li {
+      display: block;
+      margin:auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .menu {
+        margin-left: 0px;
+    }
+ 
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+      margin-right: -70px;
+    }
+    .github {
+      margin-left: 70px;
+      margin-right: 70px;
+    }
+    .title {
+      margin-left: -100px;
+    }
+
+   
+  }
+    
