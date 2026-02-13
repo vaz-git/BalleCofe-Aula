@@ -1,0 +1,185 @@
+/* Importação das Fonts Google Fonts) 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Inter:wght@600&family=Montserrat:wght@800&family=Teko:wght@600&display=swap');
+
+/* Estilos gerais (Todo o projeto) */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* Define o modelo de caixa para incluir padding e borda no tamanho total do elemento */
+}
+
+body {
+    background: #1F1517;
+    color: #FFFF;
+}
+
+html {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none; /* Remove a decoração de texto, como sublinhado, do elemento */
+}
+
+ul {
+    list-style-type: none; /* Remove os marcadores de lista (bolinhas) de um elemento de lista */
+}
+
+
+/* _____________________________________________________ */
+/* Receitas */
+
+.receitas {
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    padding: 3rem 2rem;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.receitas-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.receitas-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff2e7;
+}
+
+.receitas-subtitle {
+    color: #c7bab3;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Usado na palavra (Em alta) em receitas */
+.amarelo {
+    color: #e7a80e;
+}
+
+article {
+    column-count: 2;
+}
+
+.card {
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: -3rem;
+}
+
+.card-2 {
+    background: #241a1c; /* Cor de fundo do elemento */
+    padding: 2rem; /* Preenchimento interno de 2 vezes o tamanho da unidade 'rem' */
+    border-radius: 0.5rem; /* Borda arredondada com raio de 0.5 vezes o tamanho da unidade 'rem' */
+    display: flex; /* Define o elemento como um container flexível */
+    flex-direction: column; /* Organiza os elementos filhos em uma coluna */
+    gap: 2rem; /* Define o espaçamento entre os elementos filhos como 2 vezes o tamanho da unidade 'rem' */
+    flex-basis: 29rem; /* Define o tamanho inicial flexível do elemento como 29 vezes o tamanho da unidade 'rem' */
+    margin-top: 2rem; /* Adiciona um espaçamento de margem superior de 2 vezes o tamanho da unidade 'rem' ao elemento */
+}
+
+.card-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.legend {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cappuccino {
+    color: #fff2e7;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.avaliacao {
+    color: #756a67;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.descricao {
+    color: #c7bab3;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.author > img {
+    border-radius: 20rem;
+    width: 1.5rem;
+}
+
+.ignacio {
+    color: #c7bab3;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* _____________________________________________________ */
+/* Footer */
+
+footer {
+    padding: 4rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: #23181A;
+}
+
+.footer-container {
+    color: #fff2e7;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer-content {
+    color: rgba(255, 242, 231, 0.50);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* _____________________________________________________ */
+/* Responsividade (Telas menores que 768px) */
+
+@media screen and (max-width: 768px) {
+
+   
+    /* Receitas */
+
+    article {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px; /* Adiciona um espaçamento inferior entre os cards */
+    }
+
+  }
+  
